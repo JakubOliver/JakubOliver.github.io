@@ -1,1 +1,148 @@
-<h1> Ahoj </h1>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osobní stránka – Jakub Kubín</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Jakub Oliver Kubín
+        </h1>
+
+        <nav class="navbar">
+            <a href="#about">O mně</a>
+            <a href="#skills">Znalosti</a>
+            <a href="#projects">Projekty</a>
+            <a href="#certificates">Certifikáty</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+
+        <!--
+        <a class="cv-button" href="cv.pdf" download>📄 Stáhnout životopis</a>
+        -->
+    </header>
+
+    <main>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="section-title">
+                Osobní informace
+            </h2>
+            <div class="about-grid">
+                <div class="about-text">
+                <p><strong>Studium:</strong> Informatika, Matfyz, UK</p>
+                <p><strong>Lokalita:</strong> Praha, Česká republika</p>
+                <p><strong>Zájmy:</strong> Programování, matematika, linux, knihy</p>
+                <p><strong>Email:</strong> jakub.oliver.kubin@gmail.com</p>
+                </div>
+                <div class="about-photo">
+                    <img src="src/profile.jpg" alt="Moje fotografie" />
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2 class="section-title">
+                Znalosti
+            </h2>
+            <ul class="skills-grid">
+                <li class="skill"><i class="devicon-python-plain colored"></i>Python</li>
+                <li class="skill"><i class="devicon-csharp-plain colored"></i>C#</li>
+                <li class="skill"><i class="devicon-bash-plain"></i>Bash</li>
+                <li class="skill"><i class="devicon-cplusplus-plain colored"></i>C++</li>
+                <li class="skill"><i class="devicon-fortran-plain"></i>Fortran</li>
+                <li class="skill"><i class="devicon-git-plain colored"></i>Git</li>
+                <li class="skill"><i class="devicon-html5-plain colored"></i>HTML/CSS/JS</li>
+                <li class="skill"><i class="devicon-flask-original"></i>Flask</li>
+                <li class="skill"><i class="devicon-mysql-plain"></i>MySQL</li>
+                <li class="skill"><i class="devicon-linux-plain"></i>Linux</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2 class="section-title">
+                Projekty
+            </h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-thumb"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            CzeTex - PDF generator
+                        </h3>
+                        <p>
+                            LaTeXem inspirovaný nástroj v C# pro převod vlastního markupu do PDF.
+                        </p>
+                        <a href="https://github.com/JakubOliver/CzeTex" target="_blank">
+                            Zobrazit projekt &#8614;
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES -->
+        <section id="certificates">
+            <h2 class="section-title">
+                Certifikáty
+            </h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>
+                        Python Developer
+                    </h3>
+                    <p>
+                        Issued 17 March, 2025&nbsp;|&nbsp;<a href="src/share3964555339020972808.pdf">PDF</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2 class="section-title">
+                Kontakt
+            </h2>
+            <div class="contact">
+                <a href="mailto:jakub.oliver.kubin@gmail.com">
+                    📧 jakub.oliver.kubin@gmail.com.com
+                </a>
+                <a href="https://github.com/JakubOliver" target="_blank">
+                    💻 GitHub
+                </a>
+                <!--
+                <a href="https://linkedin.com/in/yourusername" target="_blank">
+                    🔗 LinkedIn
+                </a>
+                -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Jakub Oliver Kubín. Všechna práva vyhrazena.
+    </footer>
+
+    <!--
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    -->
+    <script>
+        const toggle=document.getElementById("theme-toggle");
+        let dark=false;
+
+        toggle.addEventListener("click",()=>{
+            document.body.style.background=dark?"#F9F9F9":"#121212";
+            document.body.style.color=dark?"#212121":"#F9F9F9";
+            toggle.textContent=dark?"🌙 Dark Mode":"☀️ Light Mode";
+            dark=!dark;
+        });
+    </script>
+</body>
+</html>
