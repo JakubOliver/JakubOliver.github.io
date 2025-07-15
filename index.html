@@ -6,6 +6,7 @@
     <title>Osobní stránka – Jakub Kubín</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -54,14 +55,14 @@
             <ul class="skills-grid">
                 <li class="skill"><i class="devicon-python-plain colored"></i>Python</li>
                 <li class="skill"><i class="devicon-csharp-plain colored"></i>C#</li>
-                <li class="skill"><i class="devicon-bash-plain"></i>Bash</li>
+                <li class="skill"><i class="devicon-bash-plain colored"></i>Bash</li>
                 <li class="skill"><i class="devicon-cplusplus-plain colored"></i>C++</li>
-                <li class="skill"><i class="devicon-fortran-plain"></i>Fortran</li>
+                <li class="skill"><i class="devicon-fortran-original colored"></i>Fortran</li>
                 <li class="skill"><i class="devicon-git-plain colored"></i>Git</li>
                 <li class="skill"><i class="devicon-html5-plain colored"></i>HTML/CSS/JS</li>
-                <li class="skill"><i class="devicon-flask-original"></i>Flask</li>
-                <li class="skill"><i class="devicon-mysql-plain"></i>MySQL</li>
-                <li class="skill"><i class="devicon-linux-plain"></i>Linux</li>
+                <li class="skill"><i class="devicon-java-plain colored"></i>Java</li>
+                <li class="skill"><i class="devicon-mysql-plain colored"></i>MySQL</li>
+                <li class="skill"><i class="devicon-linux-plain colored"></i>Linux</li>
             </ul>
         </section>
 
@@ -72,13 +73,22 @@
             </h2>
             <div class="projects-grid">
                 <article class="project-card">
-                    <div class="project-thumb"></div>
+                    <div class="project-thumb">
+                        <div class="column">
+                            <img src="src/CzeTex_review_code.png" class="top-left">
+                            <img src="src/CzeTex_math_pdf.png" class="bottom-left">
+                        </div>
+                        <div class="column">
+                            <img src="src/CzeTex_review_pdf.png" class="bottom-right">
+                            <img src="src/CzeTex_math_code.png" class="top-right">
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3 class="project-title">
                             CzeTex - PDF generator
                         </h3>
                         <p>
-                            LaTeXem inspirovaný nástroj v C# pro převod vlastního markupu do PDF.
+                            Aplikace CzeTex je interpret vlastní verze jazyka inspirovaného LaTeXem. Interpret převádí textový soubor dle předem stanové gramatiky do .pdf výstupního dokumentu, který za pomocí funkcí v textovém souboru modifikuje. Aplikace umožňuje základní i mírně pokročilou práci s textem a nabízí základní využití matematické notace. Cílem projektu je silná personalizace textových CzeTex funkcí a přizpůsobení syntaxe i výběr speciálních znaků českému rozložení klávesnice.
                         </p>
                         <a href="https://github.com/JakubOliver/CzeTex" target="_blank">
                             Zobrazit projekt &#8614;
