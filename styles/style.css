@@ -349,3 +349,10 @@ footer{
 @media (max-width: 560px) {
   .skills-grid--tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+/* Rich project cards: consistent with the existing blue/white portfolio. */
+.project-card { min-width:0; }
+.project-tech { display:flex; flex-wrap:wrap; gap:.4rem; list-style:none; padding:0; margin:.1rem 0 .25rem; }
+.project-tech li { border:1px solid #c6dbe8; border-radius:.4rem; padding:.12rem .5rem; color:#29495d; background:#f5fafc; font-size:.75rem; font-weight:500; }
+.project-link { display:inline-flex; align-items:center; width:fit-content; min-height:2.5rem; text-underline-offset:3px; }
+.project-link:hover { text-decoration:underline; }
+@media(max-width:600px) { .project-content { padding:1.1rem; } }
