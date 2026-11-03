@@ -329,3 +329,7 @@ footer{
 /* Text-only project card: no empty image placeholder or reserved image height. */
 .project-card--no-image .project-content { flex:1; padding:1.5rem; gap:.75rem; }
 .project-card--no-image .project-title { color:var(--clr-primary-dark); font-size:1.2rem; }
+
+/* Show the complete F1 thumbnail rather than cropping into the car. */
+.project-thumb--f1 { background: #e8f4fa; }
+.project-thumb--f1 > img { object-fit: contain; object-position: center; }
