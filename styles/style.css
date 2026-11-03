@@ -337,3 +337,8 @@ footer{
 /* Keep the full MAPF grid visualization visible within its thumbnail. */
 .project-thumb--mapf { background: #e8f4fa; }
 .project-thumb--mapf > img { object-fit: contain; object-position: center; }
+
+/* Group skills by specialization and core development tools. */
+.skills-group { display:grid; gap:1rem; }
+.skills-group-title { color:var(--clr-primary-dark); font-size:1.15rem; font-weight:600; }
+.skill-symbol { display:grid; place-items:center; width:2rem; height:2rem; color:var(--clr-primary-dark); font-size:2rem; line-height:1; font-weight:600; }
