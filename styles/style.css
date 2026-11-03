@@ -341,4 +341,4 @@ footer{
 /* Group skills by specialization and core development tools. */
 .skills-group { display:grid; gap:1rem; }
 .skills-group-title { color:var(--clr-primary-dark); font-size:1.15rem; font-weight:600; }
-.skill-symbol { display:grid; place-items:center; width:2rem; height:2rem; color:var(--clr-primary-dark); font-size:2rem; line-height:1; font-weight:600; }
+.skill-icon { display:block; width:2rem; height:2rem; filter: invert(19%) sepia(75%) saturate(1462%) hue-rotate(186deg) brightness(87%) contrast(100%); }
