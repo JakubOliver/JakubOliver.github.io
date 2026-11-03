@@ -307,3 +307,25 @@ footer{
     padding:1.25rem 1rem;
     border-radius:1rem 1rem 0 0;
 }
+
+/* Portfolio refresh: retain existing colors, typography and card language. */
+.hero-subtitle { color: #e8f7ff; font-weight: 500; text-wrap: balance; }
+.header-actions { display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap; }
+.header-social { color:#fff; text-decoration:underline; text-underline-offset:3px; }
+.language-switch { display:inline-flex; padding:3px; border:1px solid rgba(255,255,255,.7); border-radius:.65rem; gap:3px; }
+.language-switch button { background:transparent; color:#fff; border:0; border-radius:.4rem; padding:.35rem .7rem; font:inherit; font-weight:600; cursor:pointer; }
+.language-switch button[aria-pressed="true"] { background:#fff; color:var(--clr-primary-dark); }
+.language-switch button:focus-visible, a:focus-visible { outline:3px solid var(--clr-accent); outline-offset:3px; }
+.about-text { display:grid; gap:.7rem; }
+.about-text a, .project-content a { color:var(--clr-primary-dark); }
+.experience-card { background:#fff; border-left:4px solid var(--clr-primary); border-radius:.75rem; padding:1.25rem; box-shadow:0 2px 8px rgba(0,0,0,.08); display:grid; gap:.5rem; }
+.experience-heading { display:flex; justify-content:space-between; gap:.75rem; flex-wrap:wrap; align-items:baseline; }
+.experience-heading span { color:#525b65; }
+.project-thumb > img { display:block; width:100%; height:100%; object-fit:cover; }
+.project-placeholder, .project-thumb.image-unavailable { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.5rem; background:linear-gradient(135deg,#e8f4fa,#c8eaf4); color:var(--clr-primary-dark); }
+.project-placeholder span { font-size:2.5rem; }
+.project-placeholder small { font-size:.85rem; }
+.project-content { flex:1; }
+.project-content a { margin-top:auto; font-weight:600; }
+@media(max-width:600px) { header { padding:2rem .75rem 2.5rem; } header h1 { font-size:2rem; } nav.navbar { gap:.7rem 1rem; } main { gap:3rem; } .projects-grid { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
