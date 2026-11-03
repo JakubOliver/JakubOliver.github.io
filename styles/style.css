@@ -307,3 +307,52 @@ footer{
     padding:1.25rem 1rem;
     border-radius:1rem 1rem 0 0;
 }
+
+/* Portfolio refresh: retain existing colors, typography and card language. */
+.hero-subtitle { color: #e8f7ff; font-weight: 500; text-wrap: balance; }
+.header-actions { display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap; }
+.header-social { color:#fff; text-decoration:underline; text-underline-offset:3px; }
+.about-text { display:grid; gap:.7rem; }
+.about-text a, .project-content a { color:var(--clr-primary-dark); }
+.experience-card { background:#fff; border-left:4px solid var(--clr-primary); border-radius:.75rem; padding:1.25rem; box-shadow:0 2px 8px rgba(0,0,0,.08); display:grid; gap:.5rem; }
+.experience-heading { display:flex; justify-content:space-between; gap:.75rem; flex-wrap:wrap; align-items:baseline; }
+.experience-heading span { color:#525b65; }
+.project-thumb > img { display:block; width:100%; height:100%; object-fit:cover; }
+.project-placeholder, .project-thumb.image-unavailable { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.5rem; background:linear-gradient(135deg,#e8f4fa,#c8eaf4); color:var(--clr-primary-dark); }
+.project-placeholder span { font-size:2.5rem; }
+.project-placeholder small { font-size:.85rem; }
+.project-content { flex:1; }
+.project-content a { margin-top:auto; font-weight:600; }
+@media(max-width:600px) { header { padding:2rem .75rem 2.5rem; } header h1 { font-size:2rem; } nav.navbar { gap:.7rem 1rem; } main { gap:3rem; } .projects-grid { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
+
+/* Text-only project card: no empty image placeholder or reserved image height. */
+.project-card--no-image .project-content { flex:1; padding:1.5rem; gap:.75rem; }
+.project-card--no-image .project-title { color:var(--clr-primary-dark); font-size:1.2rem; }
+
+/* Show the complete F1 thumbnail rather than cropping into the car. */
+.project-thumb--f1 { background: #e8f4fa; }
+.project-thumb--f1 > img { object-fit: contain; object-position: center; }
+
+/* Keep the full MAPF grid visualization visible within its thumbnail. */
+.project-thumb--mapf { background: #e8f4fa; }
+.project-thumb--mapf > img { object-fit: contain; object-position: center; }
+
+/* Group skills by specialization and core development tools. */
+.skills-group { display:grid; gap:1rem; }
+.skills-group-title { color:var(--clr-primary-dark); font-size:1.15rem; font-weight:600; }
+.skill-icon { display:block; width:2rem; height:2rem; filter: invert(19%) sepia(75%) saturate(1462%) hue-rotate(186deg) brightness(87%) contrast(100%); }
+
+/* Fixed desktop grids: AI 2 × 2, programming tools 3 × 2. */
+.skills-grid--ai { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.skills-grid--tools { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 560px) {
+  .skills-grid--tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* Rich project cards: consistent with the existing blue/white portfolio. */
+.project-card { min-width:0; }
+.project-tech { display:flex; flex-wrap:wrap; gap:.4rem; list-style:none; padding:0; margin:.1rem 0 .25rem; }
+.project-tech li { border:1px solid #c6dbe8; border-radius:.4rem; padding:.12rem .5rem; color:#29495d; background:#f5fafc; font-size:.75rem; font-weight:500; }
+.project-link { display:inline-flex; align-items:center; width:fit-content; min-height:2.5rem; text-underline-offset:3px; }
+.project-link:hover { text-decoration:underline; }
+@media(max-width:600px) { .project-content { padding:1.1rem; } }

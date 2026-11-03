@@ -1,178 +1,370 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="title" content="Jakub Oliver Kubín - osobní stránka">
-    <meta name="description" content="Oficiální osobní web Jakuba Olivera Kubína.">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Jakub Oliver Kubín | Software Engineer & AI Student
+    </title>
+    <meta name="description" content="Portfolio of Jakub Oliver Kubín, an AI-focused Computer Science student at Charles University and former Microsoft Software Engineering Intern. Explore software and research projects.">
     <meta name="author" content="Jakub Oliver Kubín">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jakub Oliver Kubín - osobní stránka</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css" rel="stylesheet">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://kubinlabs.org/">
+    <meta name="theme-color" content="#0077B6">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Jakub Oliver Kubín">
+    <meta property="og:title" content="Jakub Oliver Kubín | Software Engineer & AI Student">
+    <meta property="og:description" content="AI-focused Computer Science student at Charles University, former Microsoft SWE Intern, and software developer.">
+    <meta property="og:url" content="https://kubinlabs.org/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="cs_CZ">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jakub Oliver Kubín | Software Engineer & AI Student">
+    <meta name="twitter:description" content="AI-focused Computer Science student, former Microsoft SWE Intern, and software developer.">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jakub Oliver Kubín",
+        "url": "https://kubinlabs.org/",
+        "sameAs": [
+          "https://github.com/JakubOliver",
+          "https://www.linkedin.com/in/jakub-oliver-kub%C3%ADn-3b80583a7/"
+        ],
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "Microsoft"
+        },
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Charles University"
+        },
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Software Engineering",
+          "Multi-Agent Path Finding",
+          "Optimization"
+        ]
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="src/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/favicon_io/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="src/favicon_io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="src/favicon_io/android-chrome-512x512.png">
     <link rel="manifest" href="src/favicon_io/site.webmanifest">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHLG9XJLRX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MHLG9XJLRX');
-</script>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>
-            Jakub Oliver Kubín
-        </h1>
-
-        <nav class="navbar">
-            <a href="#about">O mně</a>
-            <a href="#skills">Znalosti</a>
-            <a href="#projects">Projekty</a>
-            <a href="#certificates">Certifikáty</a>
-            <a href="#contact">Kontakt</a>
-        </nav>
-
-        <!--
-        <a class="cv-button" href="cv.pdf" download>📄 Stáhnout životopis</a>
-        -->
+      <h1>
+        Jakub Oliver Kubín
+      </h1>
+      <p class="hero-subtitle" data-en="Computer Science · Artificial Intelligence · Software Engineering" data-cs="Informatika · Umělá inteligence · Softwarové inženýrství">
+        Computer Science · Artificial Intelligence · Software Engineering
+      </p>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="#about" data-en="About" data-cs="O mně">
+          About
+        </a>
+        <a href="#experience" data-en="Experience" data-cs="Zkušenosti">
+          Experience
+        </a>
+        <a href="#skills" data-en="Skills" data-cs="Znalosti">
+          Skills
+        </a>
+        <a href="#projects" data-en="Projects" data-cs="Projekty">
+          Projects
+        </a>
+        <a href="#certificates" data-en="Certificates" data-cs="Certifikáty">
+          Certificates
+        </a>
+        <a href="#contact" data-en="Contact" data-cs="Kontakt">
+          Contact
+        </a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-social" href="https://www.linkedin.com/in/jakub-oliver-kub%C3%ADn-3b80583a7/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          LinkedIn ↗
+        </a>
+      </div>
     </header>
-
     <main>
-        <!-- ABOUT -->
-        <section id="about">
-            <h2 class="section-title">
-                Osobní informace
-            </h2>
-            <div class="about-grid">
-                <div class="about-text">
-                <p><strong>Studium:</strong> Informatika, MFF UK</p>
-                <p><strong>Lokalita:</strong> Praha, Česká republika</p>
-                <p><strong>Zájmy:</strong> Programování, matematika, linux, knihy</p>
-                <p><strong>Email:</strong> <a href="mailto:jakub.oliver.kubin@gmail.com"> jakub.oliver.kubin@gmail.com </a></p>
-                </div>
-                <!--
-                <div class="about-photo">
-                    <img src="src/profile.jpg" alt="Moje fotografie" />
-                </div>
-                -->
+      <section id="about">
+        <h2 class="section-title" data-en="About Me" data-cs="O mně">
+          About Me
+        </h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-en="I study Computer Science at the Faculty of Mathematics and Physics, Charles University, specializing in Artificial Intelligence. I enjoy building practical software and exploring algorithms, optimization, and machine learning." data-cs="Studuji informatiku na Matematicko-fyzikální fakultě Univerzity Karlovy se zaměřením na umělou inteligenci. Baví mě vytvářet praktický software a věnovat se algoritmům, optimalizaci a strojovému učení.">
+              I study Computer Science at the Faculty of Mathematics and Physics, Charles University, specializing in Artificial Intelligence. I enjoy building practical software and exploring algorithms, optimization, and machine learning.
+            </p>
+            <p>
+              <strong data-en="Location:" data-cs="Lokalita:">
+                Location:
+              </strong>
+              <span data-en="Prague, Czech Republic" data-cs="Praha, Česká republika">
+                Prague, Czech Republic
+              </span>
+            </p>
+            <p>
+              <strong data-en="Interests:" data-cs="Zájmy:">
+                Interests:
+              </strong>
+              <span data-en="Artificial Intelligence, programming, mathematics, Linux, books" data-cs="Umělá inteligence, programování, matematika, Linux, knihy">
+                Artificial Intelligence, programming, mathematics, Linux, books
+              </span>
+            </p>
+            <p>
+              <strong>
+                Email:
+              </strong>
+              <a href="mailto:jakub.oliver.kubin@gmail.com">
+                jakub.oliver.kubin@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <h2 class="section-title" data-en="Experience" data-cs="Zkušenosti">
+          Experience
+        </h2>
+        <article class="experience-card">
+          <div class="experience-heading">
+            <h3>
+              Microsoft
+            </h3>
+            <span data-en="Summer 2026 · Prague" data-cs="Léto 2026 · Praha">
+              Summer 2026 · Prague
+            </span>
+          </div>
+          <p>
+            <strong data-en="Software Engineering Intern" data-cs="Stážista softwarového inženýrství">
+              Software Engineering Intern
+            </strong>
+          </p>
+          <p data-en="Worked on regression detection for release validation, helping identify problematic changes across deployment rings using large-scale test-result data." data-cs="Pracoval jsem na detekci regresí při validaci vydání softwaru, včetně identifikace problematických změn napříč nasazovacími okruhy pomocí rozsáhlých dat z testování.">
+            Worked on regression detection for release validation, helping identify problematic changes across deployment rings using large-scale test-result data.
+          </p>
+        </article>
+      </section>
+      <section id="skills">
+        <h2 class="section-title" data-en="Skills" data-cs="Znalosti">Skills</h2>
+        <div class="skills-group">
+          <h3 class="skills-group-title">AI &amp; Specializations</h3>
+          <ul class="skills-grid skills-grid--ai">
+            <li class="skill">
+              <img class="skill-icon" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/brain-circuit.svg" width="32" height="32" alt="" aria-hidden="true">
+              <span>AI & ML Engineering</span>
+            </li>
+            <li class="skill">
+              <img class="skill-icon" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/workflow.svg" width="32" height="32" alt="" aria-hidden="true">
+              <span>AI Agent Orchestration</span>
+            </li>
+            <li class="skill">
+              <img class="skill-icon" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/network.svg" width="32" height="32" alt="" aria-hidden="true">
+              <span>Multi-Agent Systems</span>
+            </li>
+            <li class="skill">
+              <img class="skill-icon" src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/route.svg" width="32" height="32" alt="" aria-hidden="true">
+              <span>Optimization & Search</span>
+            </li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Programming &amp; Tools</h3>
+          <ul class="skills-grid skills-grid--tools">
+            <li class="skill">
+              <i class="devicon-python-plain colored" aria-hidden="true"></i>
+              <span>Python</span>
+            </li>
+            <li class="skill">
+              <i class="devicon-cplusplus-plain colored" aria-hidden="true"></i>
+              <span>C++</span>
+            </li>
+            <li class="skill">
+              <i class="devicon-java-plain colored" aria-hidden="true"></i>
+              <span>Java</span>
+            </li>
+            <li class="skill">
+              <i class="devicon-csharp-plain colored" aria-hidden="true"></i>
+              <span>C#</span>
+            </li>
+            <li class="skill">
+              <i class="devicon-mysql-plain colored" aria-hidden="true"></i>
+              <span>SQL</span>
+            </li>
+            <li class="skill">
+              <i class="devicon-linux-plain colored" aria-hidden="true"></i>
+              <span>Linux & Bash</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="projects">
+        <h2 class="section-title" data-en="Projects" data-cs="Projekty">
+          Projects
+        </h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img loading="lazy" src="src/Factory_Creator_electric_mining_drill_post_evolution_cropped.png" alt="Factory Layout Creator preview" onerror="this.parentElement.classList.add('image-unavailable');this.remove()">
             </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills">
-            <h2 class="section-title">
-                Znalosti
-            </h2>
-            <ul class="skills-grid">
-                <li class="skill"><i class="devicon-python-plain colored"></i>Python</li>
-                <li class="skill"><i class="devicon-csharp-plain colored"></i>C#</li>
-                <li class="skill"><i class="devicon-bash-plain colored"></i>Bash</li>
-                <li class="skill"><i class="devicon-cplusplus-plain colored"></i>C++</li>
-                <li class="skill"><i class="devicon-fortran-original colored"></i>Fortran</li>
-                <li class="skill"><i class="devicon-git-plain colored"></i>Git</li>
-                <li class="skill"><i class="devicon-html5-plain colored"></i>HTML/CSS/JS</li>
-                <li class="skill"><i class="devicon-java-plain colored"></i>Java</li>
-                <li class="skill"><i class="devicon-mysql-plain colored"></i>MySQL</li>
-                <li class="skill"><i class="devicon-linux-plain colored"></i>Linux</li>
-            </ul>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2 class="section-title">
-                Projekty
-            </h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-thumb">
-                        <div class="column">
-                            <img src="src/CzeTex_review_code.png" class="top-left">
-                            <img src="src/CzeTex_math_pdf.png" class="bottom-left">
-                        </div>
-                        <div class="column">
-                            <img src="src/CzeTex_review_pdf.png" class="bottom-right">
-                            <img src="src/CzeTex_math_code.png" class="top-right">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">
-                            CzeTex - PDF generator
-                        </h3>
-                        <p>
-                            Aplikace CzeTex je interpret vlastní verze jazyka inspirovaného LaTeXem. Interpret převádí textový soubor dle předem stanové gramatiky do .pdf výstupního dokumentu, který za pomocí funkcí v textovém souboru modifikuje. Aplikace umožňuje základní i mírně pokročilou práci s textem a nabízí základní využití matematické notace. Cílem projektu je silná personalizace textových CzeTex funkcí a přizpůsobení syntaxe i výběr speciálních znaků českému rozložení klávesnice.
-                        </p>
-                        <a href="https://github.com/JakubOliver/CzeTex" target="_blank">
-                            Zobrazit projekt &#8614;
-                        </a>
-                    </div>
-                </article>
+            <div class="project-content">
+              <h3 class="project-title" data-en="Factory Layout Creator" data-cs="Tvůrce rozložení továren">
+                Factory Layout Creator
+              </h3>
+              <ul class="project-tech" aria-label="Technologies"><li>Python</li><li>PySide6</li><li>Optimization</li><li>Graph algorithms</li></ul>
+              <p data-en="Python application for generating and optimizing production layouts, with a GUI, CLI, graph modeling, and heuristic search." data-cs="Python aplikace pro generování a optimalizaci výrobních linek s GUI, CLI, grafovým modelem a heuristickým vyhledáváním.">
+                Python application for generating and optimizing production layouts, with a GUI, CLI, graph modeling, and heuristic search.
+              </p>
+              <a class="project-link" href="https://github.com/JakubOliver/factory-creator" target="_blank" rel="noopener noreferrer">
+                <span data-en="View project ↗" data-cs="Zobrazit projekt ↗">
+                  View project ↗
+                </span>
+              </a>
             </div>
-        </section>
-
-        <!-- CERTIFICATES -->
-        <section id="certificates">
-            <h2 class="section-title">
-                Certifikáty
-            </h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <h3>
-                        Python Developer
-                    </h3>
-                    <p>
-                        17. dubna 2025&nbsp;|&nbsp;<a href="src/share3964555339020972808.pdf">PDF</a>
-                    </p>
-                </div>
+          </article>
+          <article class="project-card">
+            <div class="project-thumb project-thumb--mapf">
+              <img
+                loading="lazy"
+                src="src/MAPF_empty_grid.png"
+                alt="Multi-Agent Path Finding visualization showing agents and planned paths on a grid"
+                onerror="this.parentElement.classList.add('image-unavailable');this.remove()"
+              >
             </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2 class="section-title">
-                Kontakt
-            </h2>
-            <div class="contact">
-                <a href="mailto:jakub.oliver.kubin@gmail.com">
-                    📧 jakub.oliver.kubin@gmail.com
-                </a>
-                <a href="https://github.com/JakubOliver" target="_blank">
-                    💻 GitHub
-                </a>
-                <!--
-                <a href="https://linkedin.com/in/yourusername" target="_blank">
-                    🔗 LinkedIn
-                </a>
-                -->
+            <div class="project-content">
+              <h3 class="project-title" data-en="Multi-Agent Path Finding" data-cs="Plánování cest více agentů">
+                Multi-Agent Path Finding
+              </h3>
+              <ul class="project-tech" aria-label="Technologies"><li>C++</li><li>MAPF</li><li>Algorithms</li><li>Research</li></ul>
+              <p data-en="Research project exploring fast online multi-agent path finding, one-step planning, priority strategies, and agent grouping." data-cs="Výzkumný projekt rychlého online plánování cest více agentů, prioritních strategií a seskupování agentů.">
+                Research project exploring fast online multi-agent path finding, one-step planning, priority strategies, and agent grouping.
+              </p>
+              <a class="project-link" href="https://github.com/JakubOliver/one_step_MAPF" target="_blank" rel="noopener noreferrer">
+                <span data-en="View project ↗" data-cs="Zobrazit projekt ↗">
+                  View project ↗
+                </span>
+              </a>
             </div>
-        </section>
+          </article>
+          <article class="project-card">
+            <div class="project-thumb project-thumb--f1">
+              <img
+                loading="lazy"
+                src="src/F1_Simulator_formula.png"
+                alt="Formula One racing car on a circuit"
+                onerror="this.parentElement.classList.add('image-unavailable');this.remove()"
+              >
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-en="Formula One Season Modelling" data-cs="Modelování sezóny Formule 1">
+                Formula One Season Modelling
+              </h3>
+              <ul class="project-tech" aria-label="Technologies"><li>C++</li><li>Monte Carlo</li><li>Simulation</li></ul>
+              <p data-en="C++-based Formula One season simulation using Monte Carlo methods." data-cs="Simulace sezóny Formule 1 v C++ s využitím metody Monte Carlo.">
+                C++-based Formula One season simulation using Monte Carlo methods.
+              </p>
+              <a class="project-link" href="https://github.com/JakubOliver/F1_monte_carlo_simulation" target="_blank" rel="noopener noreferrer">
+                <span data-en="View project ↗" data-cs="Zobrazit projekt ↗">
+                  View project ↗
+                </span>
+              </a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-thumb">
+              <img loading="lazy" src="src/CzeTex_review_pdf.png" alt="CzeTex – PDF Generator preview" onerror="this.parentElement.classList.add('image-unavailable');this.remove()">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-en="CzeTex – PDF Generator" data-cs="CzeTex – generátor PDF">
+                CzeTex – PDF Generator
+              </h3>
+              <ul class="project-tech" aria-label="Technologies"><li>Language design</li><li>Parsing</li><li>PDF</li><li>C#</li></ul>
+              <p data-en="A custom LaTeX-inspired language interpreter that generates PDF documents with text formatting and mathematical notation." data-cs="Interpret vlastního jazyka inspirovaného LaTeXem pro tvorbu PDF dokumentů s formátováním textu a matematickou notací.">
+                A custom LaTeX-inspired language interpreter that generates PDF documents with text formatting and mathematical notation.
+              </p>
+              <a class="project-link" href="https://github.com/JakubOliver/CzeTex" target="_blank" rel="noopener noreferrer">
+                <span data-en="View project ↗" data-cs="Zobrazit projekt ↗">
+                  View project ↗
+                </span>
+              </a>
+            </div>
+          </article>
+          <article class="project-card project-card--no-image">
+            <div class="project-content">
+              <h3 class="project-title" data-en="Hospital Management System" data-cs="Nemocniční informační systém">
+                Hospital Management System
+              </h3>
+              <ul class="project-tech" aria-label="Technologies"><li>Java</li><li>JavaFX</li><li>Maven</li><li>Testing</li></ul>
+              <p data-en="Modular Java application for hospital management with desktop and terminal interfaces and automated tests." data-cs="Modulární aplikace v Javě pro správu nemocnice s grafickým a terminálovým rozhraním a automatizovanými testy.">
+                Modular Java application for hospital management with desktop and terminal interfaces and automated tests.
+              </p>
+              <a class="project-link" href="https://github.com/JakubOliver/HospitalSystem" target="_blank" rel="noopener noreferrer">
+                <span data-en="View project ↗" data-cs="Zobrazit projekt ↗">
+                  View project ↗
+                </span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="certificates">
+        <h2 class="section-title" data-en="Certificates" data-cs="Certifikáty">
+          Certificates
+        </h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <h3>
+              Python Developer
+            </h3>
+            <p>
+              <span data-en="April 17, 2025" data-cs="17. dubna 2025">
+                April 17, 2025
+              </span>
+              |
+              <a href="src/share3964555339020972808.pdf">
+                PDF
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2 class="section-title" data-en="Contact" data-cs="Kontakt">
+          Contact
+        </h2>
+        <div class="contact">
+          <a href="mailto:jakub.oliver.kubin@gmail.com">
+            ✉ jakub.oliver.kubin@gmail.com
+          </a>
+          <a href="https://github.com/JakubOliver" target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+          </a>
+          <a href="https://www.linkedin.com/in/jakub-oliver-kub%C3%ADn-3b80583a7/" target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗
+          </a>
+        </div>
+      </section>
     </main>
-
     <footer>
-        © 2025 Jakub Oliver Kubín. Všechna práva vyhrazena.
+      ©
+      <span id="year">
+        2026
+      </span>
+      Jakub Oliver Kubín.
+      <span data-en="All rights reserved." data-cs="Všechna práva vyhrazena.">
+        All rights reserved.
+      </span>
     </footer>
-
-    <!--
-    <button id="theme-toggle">🌙 Dark Mode</button>
-    -->
-    <script>
-        const toggle=document.getElementById("theme-toggle");
-        let dark=false;
-
-        toggle.addEventListener("click",()=>{
-            document.body.style.background=dark?"#F9F9F9":"#121212";
-            document.body.style.color=dark?"#212121":"#F9F9F9";
-            toggle.textContent=dark?"🌙 Dark Mode":"☀️ Light Mode";
-            dark=!dark;
-        });
+    <script src="scripts/i18n.js" defer>
     </script>
-</body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHLG9XJLRX">
+    </script>
+    <script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-MHLG9XJLRX")
+    </script>
+  </body>
 </html>
