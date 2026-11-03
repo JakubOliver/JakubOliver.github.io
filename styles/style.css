@@ -325,3 +325,7 @@ footer{
 .project-content a { margin-top:auto; font-weight:600; }
 @media(max-width:600px) { header { padding:2rem .75rem 2.5rem; } header h1 { font-size:2rem; } nav.navbar { gap:.7rem 1rem; } main { gap:3rem; } .projects-grid { grid-template-columns:1fr; } }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
+
+/* Text-only project card: no empty image placeholder or reserved image height. */
+.project-card--no-image .project-content { flex:1; padding:1.5rem; gap:.75rem; }
+.project-card--no-image .project-title { color:var(--clr-primary-dark); font-size:1.2rem; }
