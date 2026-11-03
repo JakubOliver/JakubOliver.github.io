@@ -342,3 +342,10 @@ footer{
 .skills-group { display:grid; gap:1rem; }
 .skills-group-title { color:var(--clr-primary-dark); font-size:1.15rem; font-weight:600; }
 .skill-icon { display:block; width:2rem; height:2rem; filter: invert(19%) sepia(75%) saturate(1462%) hue-rotate(186deg) brightness(87%) contrast(100%); }
+
+/* Fixed desktop grids: AI 2 × 2, programming tools 3 × 2. */
+.skills-grid--ai { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.skills-grid--tools { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 560px) {
+  .skills-grid--tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
