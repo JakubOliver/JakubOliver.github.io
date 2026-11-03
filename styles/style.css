@@ -333,3 +333,7 @@ footer{
 /* Show the complete F1 thumbnail rather than cropping into the car. */
 .project-thumb--f1 { background: #e8f4fa; }
 .project-thumb--f1 > img { object-fit: contain; object-position: center; }
+
+/* Keep the full MAPF grid visualization visible within its thumbnail. */
+.project-thumb--mapf { background: #e8f4fa; }
+.project-thumb--mapf > img { object-fit: contain; object-position: center; }
